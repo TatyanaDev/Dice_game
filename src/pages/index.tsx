@@ -1,5 +1,3 @@
-'use client';
-
 import { SyntheticEvent, useState } from 'react';
 import { Box } from '@mui/material';
 import ResultSnackbar from '@/components/ResultSnackbar';
@@ -17,10 +15,10 @@ type HistoryEntry = {
 export default function DiceGame() {
   const [lastResult, setLastResult] = useState<number | null>(null);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
+  const [toastOpen, setToastOpen] = useState<boolean>(false);
   const [choice, setChoice] = useState<'over' | 'under'>('under');
-  const [toastOpen, setToastOpen] = useState(false);
-  const [threshold, setThreshold] = useState(50);
-  const [toastKey, setToastKey] = useState(0);
+  const [threshold, setThreshold] = useState<number>(50);
+  const [toastKey, setToastKey] = useState<number>(0);
 
   const rollDice = () => Math.floor(Math.random() * 100) + 1;
 

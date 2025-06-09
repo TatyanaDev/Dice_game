@@ -81,7 +81,7 @@ export default function DiceControls({
             { value: 100, label: '100' },
           ]}
           step={1}
-          aria-label="Threshold slider"
+          aria-label="threshold slider"
         />
       </Box>
 
