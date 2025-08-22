@@ -1,5 +1,6 @@
 import { SyntheticEvent, useState } from 'react';
 import { Box } from '@mui/material';
+import Head from 'next/head';
 import ResultSnackbar from '@/components/ResultSnackbar';
 import DiceControls from '@/components/DiceControls';
 import HistoryTable from '@/components/HistoryTable';
@@ -95,6 +96,14 @@ export default function DiceGame() {
 
   return (
     <>
+      <Head>
+        <title>Dice Game</title>
+        <meta
+          name="description"
+          content="A simple dice game: bet, roll, and predict the result!"
+        />
+      </Head>
+
       <Box
         justifyContent="center"
         flexDirection="column"
