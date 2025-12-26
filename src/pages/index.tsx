@@ -97,7 +97,7 @@ export default function DiceGame() {
   return (
     <>
       <Head>
-        <title>Dice Game</title>
+        <title>Dice game</title>
         <meta
           name="description"
           content="A simple dice game: bet, roll, and predict the result!"
